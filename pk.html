@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .experiences {
+        background-color: #545454;
+        display: grid;
+        place-content: center;
+        padding: 4em 0;
+      }
+
+      .activitysectionheading {
+        padding-top: 4em;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .cardcontainer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 300px;
+        background-color: #fff;
+        margin-top: 20px;
+        border-radius: 15px;
+        margin-right: 20px;
+      }
+
+      .card img {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .cardbody {
+        padding: 20px;
+      }
+
+      .cardbody button {
+        background-color: #000;
+        color: white;
+        padding: 16px 24px;
+        margin: 20px 0;
+        letter-spacing: 1px;
+        border-radius: 15px;
+      }
+
+      .cardbody .title {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+
+      .cardbody .description {
+        font-size: 18px;
+      }
+
+      .majorcities {
+        background-color: #fff;
+        display: grid;
+        place-content: center;
+        padding: 7em 0;
+      }
+
+      .citycontainers {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .citycard {
+        display: flex;
+        height: 200px;
+        width: 450px;
+        margin-top: 20px;
+        margin-right: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        background-color: #000;
+      }
+
+      .cityimage {
+        width: 200px;
+        height: 100%;
+      }
+
+      .cityimage img {
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+      }
+
+      .citydesc {
+        padding: 0 20px;
+        flex: 1;
+      }
+
+      .citydesc .title {
+        font-size: 18px;
+        color: #f1f1f1;
+      }
+
+      .citydesc .citydetails {
+        font-size: 15px;
+        padding: 10px 0;
+        color: rgb(170, 170, 170);
+      }
+
+      .citydesc .cityupdate {
+        color: rgb(95, 95, 95);
+      }
+
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .righthero {
+          display: none;
+        }
+      }
+
+      .sectionheading {
+        padding: 2em 0;
+      }
+
+      .herosection {
+        background-color: #1f1f1f;
+        display: grid;
+        place-content: center;
+      }
+
+      .leftdesc {
+        flex: 1;
+        padding-bottom: 30px;
+      }
+
+      .righthero {
+        width: 400px;
+        flex: 1;
+        margin-bottom: -50px;
+      }
+
+      .herocontainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-top: 7em;
+      }
+
+      .herotitle {
+        color: #fff;
+        font-size: 4rem;
+      }
+
+      .herodesc {
+        color: rgb(169, 169, 169);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="herosection">
+      <div class="container">
+        <div class="herocontainer">
+          <div class="leftdesc">
+            <h1 class="herotitle">Create Beautiful Memories</h1>
+            <p class="herodesc">with Easy Life Travel Agency</p>
+          </div>
+
+          <div class="righthero">
+            <img src="herodesign.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experiences">
+      <div class="container"
+      >
+        <div class="activitysectionheading">
+          <h1>Our Packages</h1>
+          <p>Make the most of your time while traveling</p>
+        </div>
+        <div class="cardcontainer">
+          <div class="card">
+            <div class="cardimga">
+              <img src="kashmir.jpg" alt="" />
+            </div>
+            <div class="cardbody">
+              <h1 class="title">Amolatar</h1>
+              <p class="description">
+                Experience all the excitement from visiting this beautiful
+                place. Activities includes jet skies, boat rides, baptism,
+                traditional dance
+              </p>
+
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="rajasthan.jpg" alt="" />
+            <div class="cardbody">
+              <h1 class="title">Amolatar</h1>
+              <p class="description">
+                Experience all the excitement from visiting this beautiful
+                place. Activities includes jet skies, boat rides, baptism,
+                traditional dance
+              </p>
+
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="singerpore.jpg" alt="" />
+            <div class="cardbody">
+              <h1 class="title">Amolatar</h1>
+              <p class="description">
+                Experience all the excitement from visiting this beautiful
+                place. Activities includes jet skies, boat rides, baptism,
+                traditional dance
+              </p>
+
+              <button>View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="majorcities">
+      <div class="container">
+        <div class="sectionheading">
+          <h1>Major City Destination</h1>
+          <p>View and explore all cities across uganda</p>
+        </div>
+
+        <div class="citycontainers">
+          <div class="citycard">
+            <div class="cityimage">
+              <img src="rajasthan.jpg" alt="" />
+            </div>
+
+            <div class="citydesc">
+              <h1 class="title">Lira City</h1>
+              <p class="citydetails">
+                The business city of northern uganda, and center of innovation
+              </p>
+
+              <p class="cityupdate">20/04/2022</p>
+            </div>
+          </div>
+
+          <div class="citycard">
+            <div class="cityimage">
+              <img src="bg.jpg" alt="" />
+            </div>
+
+            <div class="citydesc">
+              <h1 class="title">Gulu City</h1>
+              <p class="citydetails">
+                The business city of northern uganda, and center of innovation
+              </p>
+
+              <p class="cityupdate">20/04/2022</p>
+            </div>
+          </div>
+          <div class="citycard">
+            <div class="cityimage">
+              <img src="switzerland.jpg" alt="" />
+            </div>
+
+            <div class="citydesc">
+              <h1 class="title">Arua City</h1>
+              <p class="citydetails">
+                The business city of northern uganda, and center of innovation
+              </p>
+
+              <p class="cityupdate">20/04/2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
